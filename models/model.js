@@ -41,7 +41,7 @@ const productSchema = new mongoose.Schema({
   avgRating: {
     type: Number,
   },
-});
+}, {timestamps: true},);
 
 let Product = mongoose.model("Product", productSchema);
 

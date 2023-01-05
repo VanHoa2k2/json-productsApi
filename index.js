@@ -14,7 +14,7 @@ mongoose.connect((process.env.MONGODB_URL), ()=> {
     console.log("Connect success")
 })
 
-app.use(bodyParser.json({limit:"50mb"}))
+app.use(bodyParser.json({limit:"30mb"}))
 app.use(cors())
 app.use(morgan("common"))
 
