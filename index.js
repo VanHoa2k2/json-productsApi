@@ -10,11 +10,11 @@ const productRoute = require('./routes/product')
 dotenv.config()
 
 // CONNECT DATABASE
-mongoose.connect(("mongodb+srv://vanhoa2k2:zetmins012@cluster0.vhjvq9d.mongodb.net/?retryWrites=true&w=majority"), ()=> {
+mongoose.connect(("mongodb+srv://vanhoa2k2:zetmins012@cluster0.qeos9ar.mongodb.net/?retryWrites=true&w=majority"), ()=> {
     console.log("Connect success")
 })
 
-app.use(bodyParser.json({limit:"30mb"}))
+app.use(bodyParser.json({limit:"50mb"}))
 app.use(cors())
 app.use(morgan("common"))
 

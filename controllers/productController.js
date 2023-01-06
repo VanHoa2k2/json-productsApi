@@ -11,6 +11,10 @@ const productController = {
             res.status(500).json(err)
         }
     },
+
+    // addProduct: async(req, res)=> {
+    //     res.status(200).json(req.body)
+    // },
     
     //GET PRODUCT
     getAllProduct: async(req, res)=> {
