@@ -10,7 +10,7 @@ const productRoute = require('./routes/product')
 dotenv.config()
 
 // CONNECT DATABASE
-mongoose.connect((process.env.MONGODB_URL), ()=> {
+mongoose.connect(("mongodb+srv://vanhoa2k2:zetmins012@cluster0.vhjvq9d.mongodb.net/?retryWrites=true&w=majority"), ()=> {
     console.log("Connect success")
 })
 
