@@ -10,7 +10,7 @@ const productRoute = require('./routes/product')
 dotenv.config()
 
 // CONNECT DATABASE
-mongoose.connect(("mongodb+srv://vanhoa2k2:zetmins012@cluster0.qeos9ar.mongodb.net/?retryWrites=true&w=majority"), ()=> {
+mongoose.connect(("mongodb+srv://vanhoa2k2:zetmins012@cluster0.ev8zd0x.mongodb.net/?retryWrites=true&w=majority"), ()=> {
     console.log("Connect success")
 })
 
@@ -21,8 +21,8 @@ app.use(morgan("common"))
 //PUBLIC
 app.use(express.static('public'))
 //ROUTES
-app.use("/v1/product", productRoute)
+app.use("/json_CayCanh", productRoute)
 
-app.listen(8000, ()=> {
+app.listen(5000, ()=> {
     console.log('Server is running.......')
 })
